@@ -15,7 +15,7 @@
         <value>Registrer</value>
     </data>
     <data name="ConfirmPassword" xml:space="preserve">
-        <value>Bekreft engangskode</value>
+        <value>Bekreft passord</value>
     </data>
     <data name="Email" xml:space="preserve">
         <value>Epost</value>
