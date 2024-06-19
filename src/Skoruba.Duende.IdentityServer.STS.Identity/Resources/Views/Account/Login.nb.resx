@@ -48,6 +48,6 @@
         <value>Brukernavn</value>
     </data>
     <data name="NoSchema" xml:space="preserve">
-        <value>Det er ingen innloggings sjemaer konfigurert for denne klienten.</value>
+        <value>Det er ingen innloggingssjemaer konfigurert for denne klienten.</value>
     </data>
 </root>
