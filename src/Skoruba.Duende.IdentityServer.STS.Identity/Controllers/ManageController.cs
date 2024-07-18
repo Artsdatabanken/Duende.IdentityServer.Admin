@@ -702,7 +702,7 @@ namespace Skoruba.Duende.IdentityServer.STS.Identity.Controllers
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("Skoruba.Duende.IdentityServer.STS.Identity"),
+                _urlEncoder.Encode("Artsdatabankens brukerdatabase"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }
