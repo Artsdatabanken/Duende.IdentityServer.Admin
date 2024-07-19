@@ -66,6 +66,12 @@ stages:
     #     repository: 'artsdatabanken/identity-duende'
     #     command: 'push'
     #     tags: 'admin'
+    - task: NuGetCommand@2
+      inputs:
+        command: 'restore'
+        restoreSolution: '**/*.sln'
+        feedsToUse: 'select'
+        vstsFeed: 'https://www.myget.org/F/c336d179-1286-406d-b8ff-bfa3f49cd54e/api/v3/index.json'
     - task: DotNetCoreCLI@2
       displayName: "Build"
       inputs:
