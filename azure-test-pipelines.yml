@@ -14,7 +14,6 @@ resources:
 variables:
   #tag: '$(Build.BuildId)'
   tag: 'test'
-
 stages:
 - stage: Build
   displayName: Build image
@@ -29,46 +28,12 @@ stages:
       solutionPath: "**/*.sln"
 
     steps:
-
-    # - task: Bash@3
-    #   inputs:
-    #     targetType: 'inline'
-    #     script: |
-    #       cd src
-    #       pwd
-    #       ls -l
-    #       ls -l Skoruba.Duende.IdentityServer.STS.Identity/
-    # - task: Docker@2
-    #   displayName: Build frontend
-    #   inputs:
-    #     containerRegistry: 'Dockerhub'
-    #     repository: 'artsdatabanken/identity-duende'
-    #     command: 'build'
-    #     Dockerfile: '**/src/Skoruba.Duende.IdentityServer.STS.Identity/Dockerfile'
-    #     buildContext: '$(Build.SourcesDirectory)'
-    #     tags: '$(tag)'
-    # - task: Docker@2
-    #   inputs:
-    #     containerRegistry: 'Dockerhub'
-    #     repository: 'artsdatabanken/identity-duende'
-    #     command: 'push'
-    #     tags: $(tag)
-    
-    # - task: Docker@2
-    #   displayName: Build admin panel
-    #   inputs:
-    #     containerRegistry: 'Dockerhub'
-    #     repository: 'artsdatabanken/identity-duende'
-    #     command: 'build'
-    #     Dockerfile: '**/src/Skoruba.Duende.IdentityServer.Admin/Dockerfile'
-    #     buildContext: '$(Build.SourcesDirectory)'
-    #     tags: 'admin-test'
-    # - task: Docker@2
-    #   inputs:
-    #     containerRegistry: 'Dockerhub'
-    #     repository: 'artsdatabanken/identity-duende'
-    #     command: 'push'
-    #     tags: 'admin-test'
+    - task: NuGetCommand@2
+      inputs:
+        command: 'restore'
+        restoreSolution: '**/*.sln'
+        feedsToUse: 'select'
+        vstsFeed: 'https://www.myget.org/F/c336d179-1286-406d-b8ff-bfa3f49cd54e/api/v3/index.json'
     - task: DotNetCoreCLI@2
       displayName: "Build"
       inputs:
