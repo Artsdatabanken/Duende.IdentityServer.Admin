@@ -28,11 +28,11 @@ stages:
       solutionPath: "**/*.sln"
 
     steps:
-    - task: NuGetCommand@2
-      inputs:
-        command: 'restore'
-        restoreSolution: '**/*.sln'
-        feedsToUse: 'config'
+    # - task: NuGetCommand@2
+      # inputs:
+        # command: 'restore'
+        # restoreSolution: '**/*.sln'
+        # feedsToUse: 'config'
     - task: DotNetCoreCLI@2
       displayName: "Build"
       inputs:
