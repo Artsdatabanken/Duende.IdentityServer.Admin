@@ -18,6 +18,6 @@
         <value>Ja</value>
     </data>
     <data name="Message" xml:space="preserve">
-        <value>Vil du logge ut av IdentityServer?</value>
+        <value>Vil du logge ut av Artsdatabanken ID?</value>
     </data>
 </root>
