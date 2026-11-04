@@ -136,7 +136,7 @@
     <value>Slett tilgang</value>
   </data>
   <data name="SubTitle" xml:space="preserve">
-    <value>Nedenfor er listen over applikasjoner som har gitt tilgang til dine data, og navnene på dataene de har tilgang til.</value>
+    <value>Nedenfor er listen over applikasjoner som har fått tilgang til dine data, og navnene på dataene de har tilgang til.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Lagrede tilganger</value>

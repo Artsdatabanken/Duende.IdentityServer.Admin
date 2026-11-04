@@ -139,6 +139,6 @@
     <value>Min profil</value>
   </data>
   <data name="SubTitle" xml:space="preserve">
-    <value>Velkommen til</value>
+    <value>Velkommen til {0}</value>
   </data>
 </root>

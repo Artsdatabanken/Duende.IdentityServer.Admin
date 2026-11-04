@@ -4,7 +4,7 @@
             {
                 "Name": "roles",
                 "Enabled": true,
-                "DisplayName": "Roles",
+                "DisplayName": "Roller",
                 "UserClaims": [
                     "role"
                 ]
@@ -13,7 +13,7 @@
                 "Name": "openid",
                 "Enabled": true,
                 "Required": true,
-                "DisplayName": "Your user identifier",
+                "DisplayName": "Din bruker id",
                 "UserClaims": [
                     "sub"
                 ]
@@ -21,8 +21,8 @@
             {
                 "Name": "profile",
                 "Enabled": true,
-                "DisplayName": "User profile",
-                "Description": "Your user profile information (first name, last name, etc.)",
+                "DisplayName": "Brukerprofil",
+                "Description": "Informasjonen i brukerprofilen din (fornavn, etternavn, osv.)",
                 "Emphasize": true,
                 "UserClaims": [
                     "name",
@@ -44,7 +44,7 @@
             {
                 "Name": "email",
                 "Enabled": true,
-                "DisplayName": "Your email address",
+                "DisplayName": "Din epostadresse",
                 "Emphasize": true,
                 "UserClaims": [
                     "email",
